@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     width: 1200px;
     max-width: 100%;
+    margin:  0 auto;
 }
 
 h1,h2,h3,h4,h5, h6 {
@@ -38,7 +39,7 @@ section:nth-child(odd){
     height: 100px;
     box-shadow: 0 8px 6px -6px black;
     width: 100vw;
-    z-index: 2;
+    z-index: 99;
 }
 
 .menu-container {
@@ -145,9 +146,6 @@ section:nth-child(odd){
 
 
 /*Formulario */
-.form-container{
-  position: relative;
-}
 
 .form {
     width: 100%;
@@ -156,6 +154,8 @@ section:nth-child(odd){
     background-color: rgba(128, 128, 128, 0.3);
     margin-top: 2rem;
     padding: 0.5rem;
+    position: relative;
+
 }
 
 .form-button {
