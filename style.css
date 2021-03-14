@@ -189,8 +189,8 @@ form{
 .avatar {
   border-radius: 50%;
   object-fit: cover;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   align-self: center;
 }
 
