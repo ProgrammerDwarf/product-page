@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCC product landing page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet"> 
-
 </head>
 <body>
-    <div class="page-wrapper">
-    <header class="header">
-      <nav class="menu-container">
-          <span class="logo-container menu-item"><img class="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MTEuODM2LDI0My40NDJMMzIwLjIzOCw3MC4wNDhjLTIuMTY3LTQuMTAyLTYuMzk2LTYuNjU4LTExLjAzNS02LjY3MmMtMC4wMTMsMC0wLjAyNSwwLTAuMDM3LDANCgkJCWMtNC42MjUsMC04Ljg1MiwyLjUyOS0xMS4wMzcsNi42MDhsLTgzLjkzLDE1Ni42NmMtMS4zODYsMi41ODYtMS4xMzQsNS43NDQsMC42NDYsOC4wNzdsMjAuNTQ0LDI2Ljk0Mg0KCQkJYzIuMjczLDIuOTgxLDUuNzI0LDQuNzc0LDkuNDcsNC45MmMzLjczNCwwLjE1NSw3LjMyNi0xLjM3Myw5LjgyMy00LjE2OGwzMi40ODEtMzYuMzQ4bDYzLjEzNyw3NC41MzYNCgkJCWMyLjM1NywyLjc4Myw1LjgwMSw0LjM5Nyw5LjQ0Nyw0LjQyOGMwLjAzNiwwLDAuMDcyLDAsMC4xMDgsMGMzLjYwNywwLDcuMDMzLTEuNTUxLDkuNDEzLTQuMjY2bDM3LjQyLTQyLjY2Nw0KCQkJYzAuMjE1LTAuMjQ2LDAuNDE0LTAuNTA1LDAuNTk2LTAuNzc3bDQuMTU3LTYuMjJDNDEyLjk2OSwyNDguODE0LDQxMy4xMjEsMjQ1Ljg3NCw0MTEuODM2LDI0My40NDJ6IE0zOTUuMTA0LDI0OC41OTINCgkJCWwtMzUuMjE3LDQwLjE1N2wtNjMuMTItNzQuNTE3Yy0yLjM0Mi0yLjc2NC01Ljc2NC00LjM3OC05LjM4OC00LjQyNmMtMC4wNTUtMC4wMDEtMC4xMS0wLjAwMS0wLjE2Ni0wLjAwMQ0KCQkJYy0zLjU2MywwLTYuOTU4LDEuNTE2LTkuMzM2LDQuMTc4bC0zMi4zODEsMzYuMjM1bC0xNS44Mi0yMC43NDdsNzkuNDc2LTE0OC4zNDVsODcuMzU3LDE2NS4zNjVMMzk1LjEwNCwyNDguNTkyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTEwLjUzNSw0MzAuMjU3TDQ1MS43MzgsMzE4Ljk2Yy0xLjkzMi0zLjY1Ny02LjQ2MS01LjA1NS0xMC4xMTktMy4xMjNjLTMuNjU3LDEuOTMyLTUuMDU1LDYuNDYyLTMuMTIzLDEwLjExOQ0KCQkJbDU2Ljg5NCwxMDcuNjk1SDI5NS45MjhjLTAuMjM2LTEuMTYyLTg2LjkwNi0xNjUuNjI3LTg2LjkwNi0xNjUuNjI3bDEyLjg4Mi0yNC4wNDVsMTMuNDg1LDE3LjY4NQ0KCQkJYzIuMjczLDIuOTgxLDUuNzI1LDQuNzc0LDkuNDcsNC45MmMzLjczNCwwLjE1NSw3LjMyNi0xLjM3Myw5LjgyMy00LjE2OGwzMi40ODEtMzYuMzQ4bDYzLjEzNyw3NC41MzYNCgkJCWMyLjM1NywyLjc4Myw1LjgwMSw0LjM5Nyw5LjQ0Nyw0LjQyOGMwLjAzNiwwLDAuMDcyLDAsMC4xMDgsMGMzLjYwNywwLDcuMDMzLTEuNTUxLDkuNDE0LTQuMjY2DQoJCQljMC4wMjUtMC4wMjgsMC4wNS0wLjA1NywwLjA3NC0wLjA4NmwzNC40MTgtNDAuNDdsMTMuOTkxLDI2LjQ4NGMxLjkzMiwzLjY1Nyw2LjQ2Miw1LjA1NiwxMC4xMTksMy4xMjMNCgkJCWMzLjY1Ny0xLjkzMiw1LjA1NS02LjQ2MiwzLjEyMy0xMC4xMTlMMzIwLjIzNyw3MC4wNDRjLTIuMTY4LTQuMTAyLTYuMzk2LTYuNjU4LTExLjAzNS02LjY3MmgtMC4wMzcNCgkJCWMtNC42MjUsMC04Ljg1MiwyLjUyOS0xMS4wMzcsNi42MDlsLTc4LjYzMSwxNDYuNzc2bC01LjI5Nyw5Ljg4N2MwLDAuMDAxLTAuMDAxLDAuMDAyLTAuMDAxLDAuMDAzbC0xMy42MTIsMjUuNDA4bC00MC40NzEtNzYuNjA3DQoJCQljLTEuNjI2LTMuMDc3LTQuNDExLTUuMjg0LTcuNjYtNi4yMDFjLTEuMDg0LTAuMzA2LTIuMjE5LTAuNDY5LTMuMzgtMC40NzJjLTAuMDEyLDAtMC4wMjQsMC0wLjAzNiwwDQoJCQljLTAuMTU1LDAtMC4zMDgsMC4wMS0wLjQ2MiwwLjAxNmMtMC4xMjcsMC4wMDQtMC4yNTUsMC4wMDUtMC4zODEsMC4wMTNjLTAuMTE1LDAuMDA4LTAuMjI4LDAuMDIzLTAuMzQyLDAuMDM0DQoJCQljLTAuMTcsMC4wMTYtMC4zNCwwLjAyOS0wLjUwOCwwLjA1MmMtMC4xNTEsMC4wMi0wLjMsMC4wNS0wLjQ0OSwwLjA3NmMtMC4xMjUsMC4wMjItMC4yNTIsMC4wMzktMC4zNzYsMC4wNjUNCgkJCWMtMy42MDIsMC43MzYtNi43MzgsMy4wMy04LjUxOSw2LjM1NGwtMjcuNDEsNTEuMTY2bC00Ni4xMDIsODYuMDU2Yy0wLjAwOCwwLjAxNS0wLjAxNCwwLjAzMS0wLjAyMiwwLjA0NkwxLjQ5OSw0MzAuMTk0DQoJCQljLTIuMDk4LDMuOTE3LTEuOTg4LDguNTMyLDAuMjk0LDEyLjM0NWMyLjI4MywzLjgxMyw2LjI5OSw2LjA4OSwxMC43NDMsNi4wODloNDg2LjkyN2M0LjQyOSwwLDguNDM4LTIuMjY1LDEwLjcyNC02LjA1OA0KCQkJQzUxMi40NzUsNDM4Ljc3Nyw1MTIuNjA0LDQzNC4xNzQsNTEwLjUzNSw0MzAuMjU3eiBNMjMxLjk0NCwyMjUuMjM4bDc3LjIwOC0xNDQuMTExbDg3LjA3MywxNjQuODI3bC0zNi4zNjcsNDIuNzZsLTYzLjA5MS03NC40ODINCgkJCWMtMi4zNDMtMi43NjUtNS43NjUtNC4zNzktOS4zODgtNC40MjZjLTAuMDU2LTAuMDAxLTAuMTExLTAuMDAxLTAuMTY2LTAuMDAxYy0zLjU2MywwLTYuOTU4LDEuNTE3LTkuMzM2LDQuMTc4bC0zMi4zODEsMzYuMjM1DQoJCQlsLTE1LjgyLTIwLjc0N0wyMzEuOTQ0LDIyNS4yMzh6IE0xNi42MzksNDMzLjY0OWw1Ni43MDYtMTA1Ljg1bDIxLjg2MiwxOC4zMTJjMi4zNTgsMS45NzUsNS4yMSwyLjk0NCw4LjA0NiwyLjk0NA0KCQkJYzMuNDM5LDAsNi44NTQtMS40MjUsOS4zMzctNC4yMDdsMjUuMDc1LTI4LjEwNGwxNi4xNSwxNi4wMjRjMi45MzYsMi45MTMsNy42NzgsMi44OTQsMTAuNTkxLTAuMDQxDQoJCQljMi45MTMtMi45MzYsMi44OTQtNy42NzgtMC4wNDEtMTAuNTkxbC0xNy45ODktMTcuODQ4Yy0yLjQyOC0yLjQwOC01Ljc3LTMuNzI0LTkuMi0zLjYyN2MtMy40MTksMC4xMDQtNi42ODYsMS42MjctOC45NjIsNC4xOA0KCQkJTDEwMywzMzMuMWwtMjIuNDMtMTguNzg3bDY4LjQ1Ny0xMjcuNzg1bDg4LjMzOCwxNjcuMjJsLTIxLjMyNiwxOS42NTVsLTE5LjUwOS0xOS4zNTdjLTIuOTM1LTIuOTEzLTcuNjc3LTIuODk0LTEwLjU5MSwwLjA0Mg0KCQkJYy0yLjkxMywyLjkzNS0yLjg5NCw3LjY3NywwLjA0MiwxMC41OWwyMS4xNzYsMjEuMDExYzIuNDQzLDIuNDIzLDUuNjI4LDMuNjQxLDguODE5LDMuNjQxYzMuMDM3LDAsNi4wNzktMS4xMDQsOC40ODYtMy4zMjMNCgkJCWwyMC4xNDQtMTguNTY2bDM0Ljk3Nyw2Ni4yMDhIMTYuNjM5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" /></span><h1 class="header-title menu-item"><a href="#"> MonteCarmelo</a></h1><span class="menu-mobile menu-item"><img class="mobile-icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00OTIsMjM2SDIwYy0xMS4wNDYsMC0yMCw4Ljk1NC0yMCwyMGMwLDExLjA0Niw4Ljk1NCwyMCwyMCwyMGg0NzJjMTEuMDQ2LDAsMjAtOC45NTQsMjAtMjBTNTAzLjA0NiwyMzYsNDkyLDIzNnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQ5Miw3NkgyMEM4Ljk1NCw3NiwwLDg0Ljk1NCwwLDk2czguOTU0LDIwLDIwLDIwaDQ3MmMxMS4wNDYsMCwyMC04Ljk1NCwyMC0yMFM1MDMuMDQ2LDc2LDQ5Miw3NnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQ5MiwzOTZIMjBjLTExLjA0NiwwLTIwLDguOTU0LTIwLDIwYzAsMTEuMDQ2LDguOTU0LDIwLDIwLDIwaDQ3MmMxMS4wNDYsMCwyMC04Ljk1NCwyMC0yMA0KCQkJQzUxMiw0MDQuOTU0LDUwMy4wNDYsMzk2LDQ5MiwzOTZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /></span>
-      </nav>
-  </header>
-  <div class="hero"></div>
-  <main class="main">
-      <section class="sobre"></section>
-      <section class="producto"></section>
-      <section class="beneficio"></section>
-      <section class="contacto"></section>
-  </main> 
-  <footer class="footer"></footer>
-</div> 
+  <header id="header" class="header">
+    <img id="header-img" class="logo-image"src="assets/icons/ligero.png" alt="Logo de la pagina">
+    <nav id="nav-bar" class="nav-bar">
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a></li>
+        <li><a class="nav-link" href="#que-hacemos">¿Qué hacemos?</a></li>
+        <li><a class="nav-link" href="#third-section">Nuestro trabajo</a></li>
+        <li><a class="nav-link" href="#forth-section">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+  <section class="container text-and-image section-padding presentation">
+    <div class="main-content">
+  
+      <div class="centered-object">
+        <h1>Somos <span class="yellow-underline">MonteCarmelo</span> expertos en luminaria</h1>
+      </div>
+
+      <div class="actions">
+        <button>Primario</button><button>Secundario</button>
+      </div>
+    </div>  
+
+    <img i class="hero-image" src="./assets/lamp-escritorio-gd.jpg" alt="Lampara encendida estilo araña en el techo">
+  </section>
+  <section id="quienes-somos" class="bg-yellow section-padding">
+    <div class="container text-and-image">
+      <div class="text">
+        <p class="subtitle">MonteCarmelo</p>
+        <p class="paragraph">Como emprendedores confiamos en la posibilidad de generar productos de alta calidad y de los mejores estándares dentro de nuestro país.<br> Arte, decoración y funcionalidad son nuestras máximas en cada proyecto. Nuestras misión es de crear elementos prácticos, elegantes y al alcance de todos para hacer de sus hogares, lugar de trabajo o cualquier entorno, una experiencia única y agradable.</p>
+      </div>
+      <img class="avatar" src="/assets/pared-lamp-pq.jpg" alt="lampara color negro mate posada en una mesita de noche">
+    </div>
+  </section>
+  <section id="que-hacemos">
+    <div class="container">
+      <article class="element-with-images section-padding">
+        <div class="text">
+          <p class="subtitle">Un lugar como ningun otro</p>
+          <p class="paragraph">Creamos luminaria de nuestra mano y con instrumentos lider en la industria sin abandonar el sentimiento con el que un artesano fabrica sus obras, esto nos otorga un toque único y diferente.<br> Los modelos descritos en la página son solo algunas de las obras que podemos crear, estás invitado a solicitarnos alguna personalizada</p>
+          </div>
+        <div class="images">
+          <img class="avatar-sq" src="./assets/jaula.jpg" alt=""><img class="avatar-sq" src="./assets/velador_black.jpg" alt="" ><img class="avatar-sq" src="./assets/lluvia.jpg" alt="lampara de lluvia cayendo del techo">
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="third-section" class="bg-yellow">
+    <div class="container">
+      <article class=" section-padding">
+        <p class="subtitle">Una imagen vale mas...</p>
+        <div class="video-container">
+          <iframe id="video" class="video" width="560" height="315" src="https://www.youtube.com/embed/NqFQ3aquBsY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eius quod earum, tempore quae delectus laborum magni nesciunt nulla ipsum ab debitis, vero veritatis nemo ipsam, modi provident ipsa. Molestias!
+          Architecto voluptates repudiandae aliquam quo, aliquid quae rem reprehenderit est fugiat ab odit, unde repellendus animi delectus cumque! Corrupti vero esse exercitationem minus quidem iure asperiores mollitia, incidunt sit provident.</p>
+      </article>
+    </div>
+  </section>
+  <section id="forth-section" class="forth-section container section-padding">
+    <div class="text">
+      <p class="subtitle">Contáctanos</p>
+      <p class="paragraph">Agregándonos conseguiras contenido exclusivo de primera mano, tendencias de mercado y productos premium para nuestros suscritos</p>
+  </div>
+    <form class=" text-and-image" id="form" action=" https://www.freecodecamp.com/email-submit">
+
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Ingresa tu correo electrónico"
+        required
+      />
+      <input id="submit" type="submit" value="Suscríbete" class="btn" />
+    </form>
+
+  </section>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
