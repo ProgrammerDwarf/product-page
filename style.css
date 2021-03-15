@@ -172,7 +172,11 @@ form{
     height: auto;
     display: block;
 }
-.actions button {
+.btn a{
+  color: white;
+  text-decoration: none;
+}
+.actions .btn{
   width: 50%;
   color:black;
   font-weight: bold;
@@ -181,6 +185,8 @@ form{
   height: 5em;
   background: var(--yellow);
 }
+
+
 .actions button:nth-child(2) {
   background: #000;
   color: var(--yellow);
